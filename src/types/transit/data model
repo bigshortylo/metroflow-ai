@@ -1,0 +1,17 @@
+export type VehicleStatus =
+	| "In Service"
+	| "Charging"
+	| "Maintenance"
+	| "Delayed";
+
+export interface Bus {
+	id: string;
+	route: string;
+	location: string;
+	battery: number;
+	passengers: number;
+	capacity: number;
+	status: VehicleStatus;
+	lat: number;
+	lng: number;
+}
